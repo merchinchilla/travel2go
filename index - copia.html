@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <script type="text/javascript">
+  $(document).ready(function () {
+
+      /*********************************************** boton hacia arriba **********************************************/
+      $('.ir-arriba').click(function(){
+          $('body, html').animate({
+              scrollTop: '0px'
+          }, 1000);
+      });
+
+      $(window).scroll(function(){
+          if( $(this).scrollTop() > 0 ){
+              $('.ir-arriba').slideDown(600);
+          } else {
+              $('.ir-arriba').slideUp(600);
+          }
+      });
+
+      /*hacia abajo*/
+      $('.ir-abajo').click(function(){
+          $('body, html').animate({
+              scrollTop: '1000px'
+          }, 1000);
+      });
+
+  });
+  </script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>TRAVEL</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="css/colores.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/jpg" href="imagenes/avion.jpg">
+</head>
+<body>
+  <a class="ir-arriba"  href="#" title="Volver arriba">
+          <span class="fa-stack">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-arrow-up fa-stack-1x fa-inverse"></i>
+          </span>
+      </a>
+  <a class="enlacetitulo" href="index.html">  <h1>LIVE 2 TRAVEL </h1></a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <ul class="navbar-nav mr-auto menu">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Europa
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="europa.html#alemania">Alemania</a>
+            <a class="dropdown-item" href="europa.html#austria">Austria</a>
+            <a class="dropdown-item" href="europa.html#españa">España</a>
+            <a class="dropdown-item" href="europa.html#francia">Francia</a>
+            <a class="dropdown-item" href="europa.html">Italia</a>
+            <a class="dropdown-item" href="europa.html">Portugal</a>
+            <a class="dropdown-item" href="europa.html">Reino Unido</a>
+            <a class="dropdown-item" href="europa.html">Republica Checa</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            América
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="america.html#argentina">Argentina</a>
+            <a class="dropdown-item" href="#">Bahamas</a>
+            <a class="dropdown-item" href="america.html#brasil">Brasil</a>
+            <a class="dropdown-item" href="america.html#canada">Canada</a>
+            <a class="dropdown-item" href="#">Cuba</a>
+            <a class="dropdown-item" href="america.html#ecuador">Ecuador</a>
+            <a class="dropdown-item" href="#">Estados Unidos</a>
+            <a class="dropdown-item" href="america.html#peru">Peru</a>
+            <a class="dropdown-item" href="#">Venezuela</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Asia
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="asia.html#camboya">Camboya</a>
+            <a class="dropdown-item" href="asia.html#china">China</a>
+            <a class="dropdown-item" href="#">Dubai</a>
+            <a class="dropdown-item" href="asia.html#india">India</a>
+            <a class="dropdown-item" href="#">Malasia</a>
+            <a class="dropdown-item" href="asia.html#maldivas">Maldivas</a>
+            <a class="dropdown-item" href="#">Tailandia</a>
+            <a class="dropdown-item" href="asia.html#japon">Japón</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Africa
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="africa.html#egipto">Egipto</a>
+            <a class="dropdown-item" href="#">Kenia</a>
+            <a class="dropdown-item" href="#">Madagascar</a>
+            <a class="dropdown-item" href="africa.html#marruecos">Marruecos</a>
+            <a class="dropdown-item" href="africa.html#sudafrica">Sudafrica</a>
+            <a class="dropdown-item" href="africa.html#tanzania">Tanzania</a>
+            <a class="dropdown-item" href="#">Tunez</a>
+            <a class="dropdown-item" href="#">Zimbabue</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Oceanía
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="oceania.html#islasfiji">Islas Fiji</a>
+            <a class="dropdown-item" href="oceania.html#melbourne">Melbourne</a>
+            <a class="dropdown-item" href="oceania.html#nuevazelanda">Nueva Zelanda</a>
+            <a class="dropdown-item" href="oceania.html#sidney">Sidney</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contactanos.html">Contáctanos</a>
+        </li>
+
+      </ul>
+    </nav>
+
+
+    <div class="row">
+      <div class="col-md-12">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="imagenes/mundo.jpg" class="d-block w-100" alt="1">
+            </div>
+            <div class="carousel-item">
+              <img src="imagenes/Europa.jpg" class="d-block w-100" alt="2">
+            </div>
+            <div class="carousel-item">
+              <img src="imagenes/america.jpg" class="d-block w-100" alt="3">
+            </div>
+            <div class="carousel-item">
+              <img src="imagenes/asia.jpg" class="d-block w-100" alt="4">
+            </div>
+            <div class="carousel-item">
+              <img src="imagenes/africa.jpg" class="d-block w-100" alt="5">
+            </div>
+            <div class="carousel-item">
+              <img src="imagenes/oceania.jpg" class="d-block w-100" alt="6">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      alert("VOLAR VIAJAR EXPERIMENTAR Y SIEMPRE DISFRUTAR");
+    </script>
+
+  </body>
+
+
+  </html>
